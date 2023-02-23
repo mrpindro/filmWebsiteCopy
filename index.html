@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pindro Entertainment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo"><img src="img/logo.jpeg" alt="" /></a>
+      <div class="end_bx">
+        <ul>
+          <li><a href="#home" class="control active-btn" data-id="home">Home</a></li>
+          <li><a href="#films" class="control" data-id="films">Films</a></li>
+          <li><a href="#series" class="control" data-id="series">Series</a></li>
+          <li id="cato-list"><a href="#">Categories <i class="fa-solid fa-angle-down"></i></a>
+            <div class="list">
+              <a href="#trends" class="control" data-id="trends">Trends</a>
+              <a href="#popular" class="control" data-id="popular">Popular</a>
+              <a href="#recentlyAdded" class="control" data-id="recentlyAdded">Recently Added</a>
+              <a href="#preferences" class="control" data-id="preferences">Preferences</a>
+              <a href="#nollywood" class="control" data-id="nollywood">Nollywood</a>
+              <a href="#hollywood" class="control" data-id="hollywood">Hollywood</a>
+            </div>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search films.." id="search" />
+          <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+          <div class="search-bx2">
+            <!-- <a href="#">
+              <img src="img/greenBookj.jpeg" alt="">
+              <div class="content2">
+                <h6>Green Book</h6>
+                <p>2018</p>
+              </div>
+            </a> -->
+          </div>
+        </div>
+        <div class="bell">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="user">
+          <img src="img/user.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <section class="container active" id="home">
+      <header>
+        <div class="content">
+          <h6>Duration: <span id="header-dur">1 season</span></h6>
+          <h3 id="header-gen"><i class="fa-solid fa-star"></i>7.5
+          <span>Action / History / Adventure / Drama / Dramaseries </span></h3>
+          <h1 id="header-title">The Underground Railroad</h1>
+          <p id="header-par">After escaping a Georgia plantation,
+               Cora boards a train embarking on a harrowing trip as she seeks true freedom while being hunted
+                by a notorious slave catcher</p>
+          <div class="btns">
+            <a href="#video">
+              <button><i class="fa-solid fa-play" id="play-btn"></i>WATCH</button>
+            </a>
+            <button><i class="fa-solid fa-plus"></i>ADD LIST</button>
+          </div>
+        </div>
+        <div class="slider_btns">
+          <h6 class="slider"></h6>
+          <h6 class="slider"></h6>
+          <h6 class="slider"></h6>
+        </div>
+      </header>
+
+      <!-- trending box start -->
+      <div class="trending_bx">
+          <li><a class="" href="#"><i class="fa-solid fa-angles-up"></i>Trends Now <span></span></a></li>
+          <li><a href="#"><i class="fa-solid fa-fire"></i>Popular <span></span></a></li>
+          <li><a href="#"><i class="fa-solid fa-star"></i>Preferences <span></span></a></li>
+          <li><a href="#"><i class="fa-solid fa-plus"></i>Recently Added <span></span></a></li>
+      </div>
+  
+      <!-- category box start -->
+      <div class="cato-bx" id="cato-bx">
+        <button id="action1">Action</button>
+        <button id="crime1">Crime</button>
+        <button>Adventure</button>
+        <button>Biography</button>
+        <button>Animation</button>
+        <button>Comedy</button>
+        <button>Documentary</button>
+        <button id="drama1">Drama</button>
+        <button>Webseries</button>
+        <button>18+</button>
+        <button>SciFi</button>
+        <button>Horror</button>
+        <button>Romance</button>
+        <button>Fantasy</button>
+        <button>Western</button>
+  
+        <div class="cato_left_right">
+          <i class="fa-solid fa-angle-down" id="left-scroll"></i>
+        </div>
+        <div class="cato_left_right">
+          <i class="fa-solid fa-angle-down" id="right-scroll"></i>
+        </div>
+      </div>
+  
+      <!-- film box start -->
+      <div class="film-bx-1" id="film-bx-1">
+        <button id="left-scroll1"><i class="fa-solid fa-angle-down"></i></button>
+        <button id="right-scroll1"><i class="fa-solid fa-angle-down"></i></button>
+        
+        <div class="film-bxx"  id="action-bx"></div>
+  
+        <div class="film-bxx"  id="crime-bx"></div>
+  
+        <div class="film-bxx"  id="drama-bx"></div>
+      </div>
+  
+      <!-- video box start -->
+      <!-- <div class="video-bx">
+        <video src="video/The Underground Railroad.MP4" id="video"></video>
+        <div class="controls">
+          <div class="play-redo">
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-rotate-right" id="sec-30"></i>
+            <span>10</span>
+          </div>
+          <div class="start-seekbar-end">
+            <span id="start-time">28.04</span>
+            <div class="seek">
+              <input type="range" id="seek" value="0">
+              <h5 id="seek-2"></h5>
+              <h4></h4>
+              <h6 id="seek-dot"></h6>
+            </div>
+            <span id="end-time">40.06</span>
+          </div>
+          <div class="cc-vol-screen">
+            <i class="fa-solid fa-closed-captioning"></i>
+            <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+            <input type="range" name="vol" id="vol">
+            <i class="fa-solid fa-expand" id="full-screen"></i>
+          </div>
+        </div>
+  
+        <h4 class="video-title">The Underground Railroad (Dramaseries) trailer HD 2021</h4>
+        <span class="watching">
+          <i class="fa-solid fa-eye"></i>watching
+        </span>
+        <div class="heart-plus">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="video-list">
+          <img src="img/fences.jpeg" alt="" class="video-1">
+          <img src="img/half-of-a-yellow-sun-2013.jpeg" alt="" class="video-1">
+          <img src="img/greenBookj.jpeg" alt=""  class="video-1">
+        </div>
+      </div> -->
+  
+      <!-- trending box2 start -->
+      <div class="trending_bx" style="margin-top: 20px;">
+        <li><a class="" href="#"><i class="fa-solid fa-photo-film"></i></i>Films <span></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-film"></i></i>Series <span></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-check"></i></i>Original Series <span></span></a></li>
+        <li><a href="#"></i>Trailer <span></span></a></li>
+      </div>
+    
+      <div class="cato-bx cato-bx2">
+       <div class="left-cato">
+        <button>Sorted by:</button>
+        <button id="all-btn">All</button>
+        <button id="latest-btn">Latest</button>
+        <button id="year">Year <i class="fa-solid fa-angle-down"></i>
+          <div class="year-bx">
+            <li>2023</li>
+            <li id="year2022-btn">2022</li>
+            <li>2021</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2014</li>
+            <li>2013</li>
+            <li>2012</li>
+          </div>
+        </button>
+        <button id="a-z">A-Z <i class="fa-solid fa-angle-down"></i>
+          <div class="year-bx letter-bx">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+            <li>M</li>
+            <li>S</li>
+            <li>T</li>
+            <li>V</li>
+            <li>Z</li>
+          </div>
+        </button>
+      </div>
+       <div class="right-cato">
+        <i class="fa-solid fa-star"></i>
+        <input type="range" name="" id="" min="4.2" max="9.9">
+        <span>7.0</span>
+       </div>
+      </div>
+      <!-- film box2 start -->
+      <div class="film-bx-1 film-bx-2" id="">
+        <div class="all box2-actives" id="all"></div>
+        <div class="latest box2-actives" id="latest"></div>
+        <div class="year" id="year-2022"></div>
+        <div class="year" id="year-2020"></div>
+        <div class="year" id="year-2013"></div>
+        <div class="letter" id="letter-b"></div>
+        <div class="letter" id="letter-h"></div>
+        <div class="letter" id="letter-t"></div>
+        <div class="rate-change" id="rate4"></div>
+        <div class="rate-change" id="rate8"></div>        
+      </div>
+    </section>
+
+    <!-- Films --> <!-- Films --> <!-- Films  --> <!-- Films  --> <!-- Films  -->
+    <!-- Films  -->
+    <section class="container" id="films">
+      <div class="filmPage">
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/fences.jpeg" alt="">
+            <div class="content">
+              <h5>Fences</h5>
+              <h6>
+               <span>2016</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>6.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/greenBookj.jpeg" alt="">
+            <div class="content">
+              <h5>Green Book</h5>
+              <h6>
+                <span>2018</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/malcolmX.jpeg" alt="" class="video-1">
+            <div class="content">
+              <h5>Malcolm X</h5>
+              <h6>
+                <span>1992</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Papillon.jpeg" alt="">
+            <div class="content">
+              <h5>Papillon</h5>
+              <h6>
+                <span>2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/The-prince-of-the-desert.jpeg" alt="">
+            <div class="content">
+              <h5>Prince of the Desert</h5>
+              <h6>
+                <span>2020</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>6.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/bloodDiamond.jpeg" alt="">
+            <div class="content">
+              <h5>Blood Diamond</h5>
+              <h6>
+                <span>2006</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/the-wolf-of-wall-street-2013.jpeg" alt="">
+            <div class="content">
+              <h5>The wolf of wall street</h5>
+              <h6>
+                <span>2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/half-of-a-yellow-sun-2013.jpeg" alt="">
+            <div class="content">
+            <h5>Half of a yellow sun</h5>
+              <h6>
+                <span>2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Fantastic-beasts-and-where-to-find-them-2017.jpg" alt="">
+            <div class="content">
+              <h5>Fantastic beasts and where to find them</h5>
+              <h6>
+                <span>2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Genius-2016.jpg" alt="">
+            <div class="content">
+              <h5>Genius</h5>
+              <h6>
+                <span>2016</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/the-curious-case-of-benjamin-button-2008.jpg" alt="">
+            <div class="content">
+              <h5>The curious case of Benjamin Button</h5>
+              <h6>
+                <span>2008</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied -->
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/fences.jpeg" alt="">
+            <div class="content">
+              <h5>Fences</h5>
+              <h6>
+               <span>2016</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>6.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/greenBookj.jpeg" alt="">
+            <div class="content">
+              <h5>Green Book</h5>
+              <h6>
+                <span>2018</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/malcolmX.jpeg" alt="" class="">
+            <div class="content">
+              <h5>Malcolm X</h5>
+              <h6>
+                <span>1992</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Papillon.jpeg" alt="">
+            <div class="content">
+              <h5>Papillon</h5>
+              <h6>
+                <span>2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/The-prince-of-the-desert.jpeg" alt="">
+            <div class="content">
+              <h5>Prince of the Desert</h5>
+              <h6>
+                <span>2020</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>6.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/bloodDiamond.jpeg" alt="">
+            <div class="content">
+              <h5>Blood Diamond</h5>
+              <h6>
+                <span>2006</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/the-wolf-of-wall-street-2013.jpeg" alt="">
+            <div class="content">
+              <h5>The wolf of wall street</h5>
+              <h6>
+                <span>2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/half-of-a-yellow-sun-2013.jpeg" alt="">
+            <div class="content">
+            <h5>Half of a yellow sun</h5>
+              <h6>
+                <span>2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Fantastic-beasts-and-where-to-find-them-2017.jpg" alt="">
+            <div class="content">
+              <h5>Fantastic beasts and where to find them</h5>
+              <h6>
+                <span>2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Genius-2016.jpg" alt="">
+            <div class="content">
+              <h5>Genius</h5>
+              <h6>
+                <span>2016</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/the-curious-case-of-benjamin-button-2008.jpg" alt="">
+            <div class="content">
+              <h5>The curious case of Benjamin Button</h5>
+              <h6>
+                <span>2008</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied -->
+      </div>
+    </section>
+
+      <!-- Series  --> <!-- Series  --> <!-- Series  --> <!-- Series  --> <!-- Series  --> <!-- Series  -->
+    <section class="container" id="series">
+      <div class="seriesPage">
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/breaking-bad-2008-2013.jpeg" alt="">
+            <div class="content">
+              <h5>Breaking Bad (series)</h5>
+              <h6>
+                <span>2008 - 2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/merlin-2008-2012.jpeg" alt="">
+            <div class="content">
+              <h5>Merlin (Series)</h5>
+              <h6>
+                <span>2008 - 2012</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Peaky-blinders-2013-2022.jpeg" alt="">
+            <div class="content">
+              <h5>Peaky Blinders (Series)</h5>
+              <h6>
+                <span>2013 - 2022</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>9.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/spartacus-2010-2013.jpeg" alt="">
+            <div class="content">
+              <h5>Spartacus (Series)</h5>
+              <h6>
+                <span>2010 - 2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/the-originals-2013-2018.jpeg" alt="">
+            <div class="content">
+              <h5>The Originals (series)</h5>
+              <h6>
+                <span>2013 - 2018</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/24-2001-2010.jpg" alt="">
+            <div class="content">
+              <h5>24 (series)</h5>
+              <h6>
+                <span>2001 - 2010</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/How-to-get-away-with-murder-2014-2020.jpg" alt="">
+            <div class="content">
+              <h5>How to get away with murder (series)</h5>
+              <h6>
+                <span>2014 - 2020</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/Luther-2010-2019.jpg" alt="">
+            <div class="content">
+              <h5>Luther (series)</h5>
+              <h6>
+                <span>2010 - 2019</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/prisonBreak(series-2005-2017).jpeg" alt="">
+            <div class="content">
+              <h5>Prison Break (series)</h5>
+              <h6>
+                <span>2005 - 2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/theundergroundrailroad.jpeg" alt="">
+            <div class="content">
+              <h5> The Underground Railroad (series)</h5>
+              <h6>
+                <span>2021</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied --> <!-- copied -->
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/The-Odyssey.jpg" alt="" class="video-1">
+            <div class="content">
+              <h5>The The-Odyssey (mini-series)</h5>
+              <h6>
+                <span>1992 - 1997</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#videoPage" class="control" data-id="videoPage">
+            <img src="img/merlin-2008-2012.jpeg" alt="">
+            <div class="content">
+              <h5>Merlin (Series)</h5>
+              <h6>
+                <span>2008 - 2012</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/Peaky-blinders-2013-2022.jpeg" alt="">
+            <div class="content">
+              <h5>Peaky Blinders (Series)</h5>
+              <h6>
+                <span>2013 - 2022</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>9.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/spartacus-2010-2013.jpeg" alt="">
+            <div class="content">
+              <h5>Spartacus (Series)</h5>
+              <h6>
+                <span>2010 - 2013</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>8.0</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/the-originals-2013-2018.jpeg" alt="">
+            <div class="content">
+              <h5>The Originals (series)</h5>
+              <h6>
+                <span>2013 - 2018</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/24-2001-2010.jpg" alt="">
+            <div class="content">
+              <h5>24 (series)</h5>
+              <h6>
+                <span>2001 - 2010</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/How-to-get-away-with-murder-2014-2020.jpg" alt="">
+            <div class="content">
+              <h5>How to get away with murder (series)</h5>
+              <h6>
+                <span>2014 - 2020</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/Luther-2010-2019.jpg" alt="">
+            <div class="content">
+              <h5>Luther (series)</h5>
+              <h6>
+                <span>2010 - 2019</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/prisonBreak(series-2005-2017).jpeg" alt="">
+            <div class="content">
+              <h5>Prison Break (series)</h5>
+              <h6>
+                <span>2005 - 2017</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="img/theundergroundrailroad.jpeg" alt="">
+            <div class="content">
+              <h5>The Underground Railroad (series)</h5>
+              <h6>
+                <span>2021</span>
+                <div class="rate">
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <h6>7.5</h6>
+                </div>
+              </h6>
+            </div>
+          </a>
+        </div>
+        <!-- copied -->
+      </div>
+    </section>
+
+    <section class="container" id="trends">
+      <div class="trendsPage">
+        <h1>Trends</h1>
+      </div>
+    </section>
+    <section class="container" id="popular">
+      <div class="popularPage">
+        <h1>Popular</h1>
+      </div>
+    </section>
+    <section class="container" id="recentlyAdded">
+      <div class="recentlyAddedPage">
+        <h1>Recently Added</h1>
+      </div>
+    </section>
+    <section class="container" id="preferences">
+      <div class="preferencesPage">
+        <h1>Preferences</h1>
+      </div>
+    </section>
+    <section class="container" id="nollywood">
+      <div class="nollywoodPage">
+        <h1>Nollywood</h1>
+      </div>
+    </section>
+    <section class="container" id="hollywood">
+      <div class="hollywoodPage">
+        <h1>Hollywood</h1>
+      </div>
+    </section>
+    <section class="container" id="videoPage">
+      <div class="video-bx">
+        <video src="video/The Underground Railroad.MP4" id="video"></video>
+        <div class="controls">
+          <div class="play-redo">
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-rotate-right" id="sec-30"></i>
+            <span>10</span>
+          </div>
+          <div class="start-seekbar-end">
+            <span id="start-time">28.04</span>
+            <div class="seek">
+              <input type="range" id="seek" value="0">
+              <h5 id="seek-2"></h5>
+              <h4></h4>
+              <h6 id="seek-dot"></h6>
+            </div>
+            <span id="end-time">40.06</span>
+          </div>
+          <div class="cc-vol-screen">
+            <i class="fa-solid fa-closed-captioning"></i>
+            <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+            <input type="range" name="vol" id="vol">
+            <i class="fa-solid fa-expand" id="full-screen"></i>
+          </div>
+        </div>
+  
+        <h4 class="video-title">The Underground Railroad (Dramaseries) trailer HD 2021</h4>
+        <span class="watching">
+          <i class="fa-solid fa-eye"></i>watching
+        </span>
+        <div class="heart-plus">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="video-list">
+          <img src="img/fences.jpeg" alt="" class="video-1">
+          <img src="img/half-of-a-yellow-sun-2013.jpeg" alt="" class="video-1">
+          <img src="img/greenBookj.jpeg" alt=""  class="video-1">
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
